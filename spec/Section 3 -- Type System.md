@@ -550,7 +550,7 @@ Scalar type extensions have the potential to be invalid if incorrectly defined.
 
 ## Objects
 
-ObjectTypeDefinition : Description? type Name ImplementsInterfaces? Directives[Const]? FieldsDefinition?
+ObjectTypeDefinition : Description? type Name ImplementsInterfaces? Directives[Const]? FieldsDefinition
 
 ImplementsInterfaces :
   - implements `&`? NamedType
@@ -944,7 +944,7 @@ Object type extensions have the potential to be invalid if incorrectly defined.
 
 ## Interfaces
 
-InterfaceTypeDefinition : Description? interface Name Directives[Const]? FieldsDefinition?
+InterfaceTypeDefinition : Description? interface Name Directives[Const]? FieldsDefinition
 
 GraphQL interfaces represent a list of named fields and their arguments. GraphQL
 objects can then implement these interfaces which requires that the object type
@@ -1244,7 +1244,7 @@ Union type extensions have the potential to be invalid if incorrectly defined.
 
 ## Enums
 
-EnumTypeDefinition : Description? enum Name Directives[Const]? EnumValuesDefinition?
+EnumTypeDefinition : Description? enum Name Directives[Const]? EnumValuesDefinition
 
 EnumValuesDefinition : { EnumValueDefinition+ }
 
@@ -1314,7 +1314,7 @@ Enum type extensions have the potential to be invalid if incorrectly defined.
 
 ## Input Objects
 
-InputObjectTypeDefinition : Description? input Name Directives[Const]? InputFieldsDefinition?
+InputObjectTypeDefinition : Description? input Name Directives[Const]? InputFieldsDefinition
 
 InputFieldsDefinition : { InputValueDefinition+ }
 
